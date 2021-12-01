@@ -9,11 +9,9 @@ icon.addEventListener('click', ()=>{
     if(document.body.classList.contains("tema-oscuro")){
         icon.src ="assets/darkmode.svg";
         inicio.src = "img/logoBlanco.png"
-        footer.src = "img/logoBlanco.png"
     } else {
         icon.src = "assets/lightmode.svg";
         inicio.src = "img/Logo.png"
-        footer.src = "img/Logo.png"
     }
 })
 
