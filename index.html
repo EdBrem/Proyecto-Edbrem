@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Desafios clase 9</title>
+  </head>
+  <body>
+    <!-- Inicio Header -->
+    <header>
+      <nav class="menu__general">
+        <div class="menu__logo">
+          <a href="#"
+            ><img
+              src="img/Logo.png"
+              alt="logo"
+              id="inicio"
+              width="35px"
+              class="logo"
+          /></a>
+        </div>
+        <div class="titulo">
+          <p>Calculadora</p>
+        </div>
+        <div>
+          <img src="assets/lightmode.svg" alt="light_mode" id="icon">
+        </div>
+      </nav>
+    </header>
+
+    <!-- Final header -->
+
+    <!-- Inicio secciones -->
+    <main>
+      <section id="principal">
+        <img src="img/logo circulo2.png" width="100px" alt="logo" />
+        <div>
+          <h1 id="bienvenida">Bienvenido a nuestra calduladora virtual</h1>
+          <h2>¿Qué deseas calcular?</h2>
+        </div>
+        <div id="botones">
+          <div><button id="modal_abrir" class="boton">Finiquito</button></div>
+          <div><button id="modal_abrir2" class="boton">Sueldos</button></div>
+        </div>
+      </section>
+
+      <section id="modal_container" class="modal__container">
+        <div id="modal">
+          <div class="finiquitos_resultados">
+            <h2>FINIQUITOS</h2>
+
+            <form action="" class="formulario">
+              <label for="sueldo">Tu sueldo es:</label><br />
+              <input type="number" name="sueldo" id="sueldo" required /><br />
+              <label for="dias">¿Cuántos días van de tu año labora?</label
+              ><br />
+              <input type="number" name="dias" id="dias" required /><br />
+              <label for="vacaciones"
+                >¿Cuántos días de vacaciones tienes pendientes?</label
+              ><br />
+              <input
+                type="number"
+                name="vacaciones"
+                id="diasVacas"
+                required
+              /><br />
+              <label for="quincena"
+                >¿Cuántos días de la quincena han pasado?</label
+              ><br />
+              <input
+                type="number"
+                name="quincena"
+                id="diasQuincena"
+                required
+              /><br />
+            </form>
+            <button id="boton1" class="boton2">Calcular</button>
+            <button id="modal_cerrar" class="boton2">Regresar</button>
+          </div>
+          <div id="resultados"></div>
+        </div>
+      </section>
+
+      <section id="modal_container2" class="modal__container2">
+        <div id="modal_dos">
+          <div class="sueldos_resultados">
+            <div>
+              <h2>Sueldos</h2>
+            </div>
+            <form action="" class="formulario">
+              <label for="sueldo">Tu sueldo bruto es:</label><br />
+              <input type="number" name="sueldo" id="sueldoNeto" /><br />
+            </form>
+            <button id="boton2" class="boton2">Calcular</button>
+            <button id="modal_cerrar2" class="boton2">Regresar</button>
+          </div>
+          <div id="resultadosDos"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Final Secciones -->
+    <!-- Footer inicia -->
+    <footer>
+      <div class="contenedor__footer">
+        <div class="footer__item">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../html/servicios.html">Servicios</a></li>
+            <li><a href="../html/bolsatrabajo.html">Bolsa de Trabajo</a></li>
+            <li><a href="../html/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <p>Teléfono: 55 55 55 55 55</p>
+          <p>contacto@contacto.com</p>
+        </div>
+        <div class="footer__item">
+          <a href="#inicio"
+            ><img src="img/Logo.png" alt="logo_rh2" height="100" id="logoFooter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Final del Footer -->
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/codigo.js"></script>
+  </body>
+</html>
